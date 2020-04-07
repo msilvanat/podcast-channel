@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Primer proyecto de Desarrollo Web Full Stack Acamica" />
+  <meta name="keywords" content="Podcast,HTML,CSS,pale blue dot,acamica" />
+  <meta name="author" content="María Silvana Tijera" />
+  <title>Podcast Channel</title>
+  <link rel="stylesheet" href="styles.css" type="text/css" />
+
+  <!--FONT AWESOME-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" />
+
+  <!--GOOGLE FONTS-->
+  <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,500,600,&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono:400,500,600,&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+  <!--NAVIGATION BAR - HAMBURGER MENU-->
+  <nav>
+    <div class="nav-cont">
+      <div class="logo">
+        <img class="logo-img" src="images/logo.svg" alt="Imagen del logo db" />
+      </div>
+      <input type="checkbox" id="chk" />
+      <label for="chk" class="show-menu-btn"><i class="fas fa-bars"></i></label>
+      <label for="chk" class="hide-menu-btn"><i class="fas fa-times"></i></label>
+      <div class="menu">
+        <a href="#episodios">EPISODIOS</a>
+        <a href="#nosotros">NOSOTROS</a>
+        <a href="#entrevistas">ENTREVISTAS</a>
+        <a href="#topicos">TÓPICOS</a>
+      </div>
+    </div>
+  </nav>
+
+  <!--HELLO WORLD-->
+  <header>
+    <div class="title-container">
+      <h1>
+        <span>Hello </span><span class="strikethrough">world</span><br /><span class="pallid">pale blue dot<span
+            class="dot">.</span></span>
+      </h1>
+    </div>
+    <div class="content">
+      <p class="mob-par">
+        Un podcast que explora el mundo de la programación. Nuevos episodios,
+        todos los jueves cada 15 días.
+      </p>
+      <p class="desk-par">
+        El portal que explora el mundo de la programación y la tecnología.
+        Nuevos episodios, todos los jueves cada 15 días.
+      </p>
+    </div>
+    <div class="know-btn">
+      <a href="#nosotros" class="click-btn">CONOCÉ MÁS</a>
+    </div>
+  </header>
+
+  <!--EPISODIOS - IFRAMES-->
+  <section class="iframes" id="episodios">
+    <h2>Episodios</h2>
+    <div class="iframe-container">
+      <div class="podcast">
+        <iframe src="https://open.spotify.com/embed-podcast/episode/7AZZy2nJ4R9ZndHW0h2yxt"
+          allow="encrypted-media"></iframe>
+      </div>
+      <div class="podcast">
+        <iframe src="https://open.spotify.com/embed-podcast/episode/1ezdL2ivAGLwSE6Xbssxqt"
+          allow="encrypted-media"></iframe>
+      </div>
+      <div class="podcast">
+        <iframe src="https://open.spotify.com/embed-podcast/episode/3cWta1iiQSfvrdHaCbLkSD"
+          allow="encrypted-media"></iframe>
+      </div>
+      <div class="podcast">
+        <iframe src="https://open.spotify.com/embed-podcast/episode/31VyAQAwBiKoHVoYUCEzjQ"
+          allow="encrypted-media"></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!--NOSOTROS-->
+  <section class="phone-container" id="nosotros">
+    <img class="women-coding" src="images/phone.png" alt="Imagen The secret history of woman in coding" />
+    <div class="phone-text">
+      <h2 class="sub-title">De dónde venimos</h2>
+      <p>
+        Our posturings, our imagined self-importance, the delusion that we
+        have some privileged position in the Universe, are challenged by this
+        point of pale light.
+        <br />
+        <br />
+
+        Our planet is a lonely speck in the great enveloping cosmic dark. In
+        our obscurity, in all this vastness, there is no hint that help will
+        come from elsewhere to save us from ourselves.
+      </p>
+    </div>
+  </section>
+
+  <!--ENTREVISTAS-->
+  <section class="interviews" id="entrevistas">
+    <h2 class="sub-title">Invitadas/os estelares</h2>
+    <div class="guest-container">
+      <img src="images/grace-hopper.png" alt="Foto de Grace Hopper" />
+      <img src="images/Katie-Bouman.png" alt="Foto de Katie Bouman" />
+      <img src="images/Margaret_Hamilton.png" alt="Foto de Margaret Hamilton" />
+      <img src="images/computer1950.png" alt="Foto de An E.R.A." />
+      <img src="images/operators.png" alt="Foto de operadoras de computadoras" />
+      <img src="images/susan-kare.png" alt="Foto de Susan Kare" />
+    </div>
+  </section>
+
+  <!--TÓPICOS-->
+  <section class="topics" id="topicos">
+    <h2 class="sub-title">Algunos de nuestros temas</h2>
+    <div class="topics-container">
+      <div class="topic-images">
+        <img src="images/icon1.svg" alt="Imagen del trabajo remoto" />
+        <h3>Trabajo remoto</h3>
+      </div>
+      <div class="topic-images">
+        <img src="images/icon2.svg" alt="Imagen de repensar la programación" />
+        <h3>Repensando la programación</h3>
+      </div>
+      <div class="topic-images">
+        <img src="images/icon3.svg" alt="Imagen de las bases del código" />
+        <h3>Bases del código</h3>
+      </div>
+      <div class="topic-images">
+        <img src="images/icon4.svg" alt="Imagen de la seguridad informática" />
+        <h3>Seguridad informática</h3>
+      </div>
+    </div>
+  </section>
+
+  <!--ÚLTIMAS NOVEDADES-->
+  <section class="latest-news">
+    <h3 class="white-title">¿Querés las últimas novedades?</h3>
+    <div class="listen-btn">
+      <a href="#episodios">ESCUCHÁ LOS EPISODIOS</a>
+    </div>
+  </section>
+
+  <!--FOOTER-->
+  <footer>
+    <p>© 2019— Hello blue pale dot</p>
+    <div class="links-container">
+      <a href="https://www.spotify.com/" target="_blank"><i class="fab fa-spotify"></i></a>
+      <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://www.twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
+      <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a>
+      <a href="https://telegram.org/" target="_blank"><i class="fab fa-telegram"></i></a>
+    </div>
+  </footer>
+</body>
+
+</html>
